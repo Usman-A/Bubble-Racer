@@ -1,13 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Bubble Racer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="71ba3cb8-09a6-4c5e-abd0-c7748f79e207" name="Default Changelist" comment="" />
+    <list default="true" id="71ba3cb8-09a6-4c5e-abd0-c7748f79e207" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Bubble_Racer_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pax Britannica 9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Bubble Racer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Collectables/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collectables/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Collectables/Coin.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collectables/Coin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Collectables/Pearl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collectables/Pearl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Monsters/JellyFish.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Monsters/JellyFish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Monsters/Octopus.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Monsters/Octopus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Monsters/Shark.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Monsters/Shark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/GameInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/GameInstance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/GameScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/PaxBritannica.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/PaxBritannica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/Resources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/background/BackgroundFXRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/background/BackgroundFXRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/background/Debris.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/background/Debris.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/background/Fish.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/background/Fish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/help/Help.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/help/Help.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/mainmenu/Countdown.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/mainmenu/Countdown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/mainmenu/FactorySelector.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/mainmenu/FactorySelector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/mainmenu/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/mainmenu/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/BigBubbleParticleEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/BigBubbleParticleEmitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/BubbleParticleEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/BubbleParticleEmitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/ExplosionParticleEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/ExplosionParticleEmitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/ParticleEmitter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/ParticleEmitter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/ParticleEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/ParticleEmitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/SparkParticleEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/particlesystem/SparkParticleEmitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/players/FactoryProduction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/de/swagner/paxbritannica/players/FactoryProduction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gui/uiskin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/gui/uiskin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collectables/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collectables/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collectables/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collectables/Coin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collectables/Collectible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collectables/Collectible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collectables/Pearl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collectables/Pearl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monsters/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monsters/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monsters/JellyFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monsters/JellyFish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monsters/Octopus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monsters/Octopus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monsters/Shark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monsters/Shark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/DefaultScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/DefaultScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/GameInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/GameInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/GameScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/PaxBritannica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/PaxBritannica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/Resources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/background/BackgroundFXRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/background/BackgroundFXRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/background/Debris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/background/Debris.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/background/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/background/Fish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/desktop/DesktopLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/desktop/DesktopLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/help/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/help/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/mainmenu/Countdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/mainmenu/Countdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/mainmenu/FactorySelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/mainmenu/FactorySelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/mainmenu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/mainmenu/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/BigBubbleParticleEmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/BigBubbleParticleEmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/BubbleParticleEmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/BubbleParticleEmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/ExplosionParticleEmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/ExplosionParticleEmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/Particle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/ParticleEmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/ParticleEmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/SparkParticleEmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/particlesystem/SparkParticleEmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/swagner/paxbritannica/players/FactoryProduction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/swagner/paxbritannica/players/FactoryProduction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1agnbyLl5E3w0GToEazH47SBI81" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,12 +88,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="DesktopLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.swagner.paxbritannica.desktop.DesktopLauncher" />
-      <module name="Pax Britannica 9" />
+      <module name="Bubble Racer" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="de.swagner.paxbritannica.desktop.*" />
@@ -69,29 +146,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="404" key="GridCell.Tab.0.bottom" timestamp="1603078303938">
+    <state x="1031" y="557" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603081888601">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="404" key="GridCell.Tab.0.bottom/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603078303938" />
-    <state width="2517" height="404" key="GridCell.Tab.0.center" timestamp="1603078303938">
+    <state x="1031" y="557" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603081888601" />
+    <state width="1258" height="404" key="GridCell.Tab.0.bottom" timestamp="1603082161407">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="404" key="GridCell.Tab.0.center/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603078303938" />
-    <state width="2517" height="404" key="GridCell.Tab.0.left" timestamp="1603078303937">
+    <state width="1258" height="404" key="GridCell.Tab.0.bottom/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603082161407" />
+    <state width="1258" height="404" key="GridCell.Tab.0.center" timestamp="1603082161407">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="404" key="GridCell.Tab.0.left/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603078303937" />
-    <state width="2517" height="404" key="GridCell.Tab.0.right" timestamp="1603078303938">
+    <state width="1258" height="404" key="GridCell.Tab.0.center/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603082161407" />
+    <state width="1258" height="404" key="GridCell.Tab.0.left" timestamp="1603082161407">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="404" key="GridCell.Tab.0.right/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603078303938" />
-    <state x="781" y="348" key="SettingsEditor" timestamp="1603078256922">
+    <state width="1258" height="404" key="GridCell.Tab.0.left/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603082161407" />
+    <state width="1258" height="404" key="GridCell.Tab.0.right" timestamp="1603082161407">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="781" y="348" key="SettingsEditor/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603078256922" />
-    <state x="976" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1603078217997">
+    <state width="1258" height="404" key="GridCell.Tab.0.right/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603082161407" />
+    <state x="781" y="348" key="SettingsEditor" timestamp="1603081900980">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="976" y="529" key="com.intellij.ide.util.TipDialog/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603078217997" />
+    <state x="781" y="348" key="SettingsEditor/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603081900980" />
+    <state x="976" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1603081846473">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="976" y="529" key="com.intellij.ide.util.TipDialog/-1920.369.1920.1050/0.0.2560.1410/2560.-693.2560.1409@0.0.2560.1410" timestamp="1603081846473" />
   </component>
 </project>

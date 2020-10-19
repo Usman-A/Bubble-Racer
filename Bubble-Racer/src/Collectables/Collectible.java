@@ -7,16 +7,16 @@ package Collectables;
 import com.badlogic.gdx.graphics.Texture;
 
 public interface Collectible {
-	
-	//names of common methods used in the collectable classes
-	Texture texture();
 
-	float getX();
+    //names of common methods used in the collectable classes
+    Texture texture();
 
-	float getY();
+    float getX();
 
-	void changeX(float time);
+    float getY();
 
-	int value();
+    void changeX(float time);
+
+    int value();
 
 }

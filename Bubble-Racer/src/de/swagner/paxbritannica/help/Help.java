@@ -14,7 +14,6 @@ import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.collision.BoundingBox;
 import com.badlogic.gdx.math.collision.Ray;
-
 import de.swagner.paxbritannica.DefaultScreen;
 import de.swagner.paxbritannica.GameInstance;
 import de.swagner.paxbritannica.Resources;
@@ -22,246 +21,242 @@ import de.swagner.paxbritannica.background.BackgroundFXRenderer;
 import de.swagner.paxbritannica.mainmenu.MainMenu;
 
 public class Help extends DefaultScreen implements InputProcessor {
-	
-	Sprite back;
-	
-	BoundingBox collisionBack = new BoundingBox();
-	BoundingBox collisionMusic = new BoundingBox();
 
-//	Sprite fighter;
-	Sprite title;
-	
-	BackgroundFXRenderer backgroundFX = new BackgroundFXRenderer();
-	Sprite blackFade;
+    Sprite back;
 
-	OrthographicCamera cam;
-	
-	BitmapFont font;
-	
-	SpriteBatch titleBatch;
-	SpriteBatch fadeBatch;
-	
-	Ray collisionRay;
+    BoundingBox collisionBack = new BoundingBox();
+    BoundingBox collisionMusic = new BoundingBox();
 
-	boolean finished = false;
-	
-	float time = 0;
-	float fade = 1.0f;
+    //	Sprite fighter;
+    Sprite title;
 
-	private int width = 800;
-	private int height = 480;
+    BackgroundFXRenderer backgroundFX = new BackgroundFXRenderer();
+    Sprite blackFade;
 
-	public Help(Game game) {
-		super(game);
-		Gdx.input.setCatchBackKey( true );
-		Gdx.input.setInputProcessor(this);
-	}
+    OrthographicCamera cam;
 
-	@Override
-	public void show() {		
-		GameInstance.getInstance().resetGame();
-		
-		blackFade = Resources.getInstance().blackFade;
-		
-		back = Resources.getInstance().back;
-		back.setPosition(20, 010);
-		back.setColor(1,1,1,0.5f);
-		collisionBack.set(new Vector3(back.getVertices()[0], back.getVertices()[1], -10),new Vector3(back.getVertices()[10], back.getVertices()[11], 10));
-		
+    BitmapFont font;
 
-		
-		titleBatch = new SpriteBatch();
-		titleBatch.getProjectionMatrix().setToOrtho2D(0, 0, 800, 480);
-		fadeBatch = new SpriteBatch();
-		fadeBatch.getProjectionMatrix().setToOrtho2D(0, 0, 2, 2);
-		
-	
-		font = new BitmapFont();
-		font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
-	}
+    SpriteBatch titleBatch;
+    SpriteBatch fadeBatch;
 
-	@Override
-	public void render(float delta) {
-		Gdx.gl.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+    Ray collisionRay;
 
-		time += delta;
+    boolean finished = false;
 
-		if (time < 1f)
-			return;
+    float time = 0;
+    float fade = 1.0f;
 
-		backgroundFX.render();
+    private int width = 800;
+    private int height = 480;
 
-		titleBatch.begin();
-		
-		//titleBatch.draw(title, 200, 200);
-		
-		back.draw(titleBatch);
-		
-		font.draw(titleBatch, "Bubble Racer is a Survival game made by Usman and Malik.", 210, 260);
-		font.draw(titleBatch, "You choose your ship and try to last !", 200, 240);
-		font.draw(titleBatch, "Use the arrow keys to control the Ships", 200, 220);
-		
-		
-		
-		
-		font.draw(titleBatch, "This game was refactored from a one button RTS to an arcade game", 200, 150);
-		font.draw(titleBatch, "Original Game is called Pax Britannica", 200, 130);
+    public Help(Game game) {
+        super(game);
+        Gdx.input.setCatchBackKey(true);
+        Gdx.input.setInputProcessor(this);
+    }
 
-		
+    @Override
+    public void show() {
+        GameInstance.getInstance().resetGame();
+
+        blackFade = Resources.getInstance().blackFade;
+
+        back = Resources.getInstance().back;
+        back.setPosition(20, 010);
+        back.setColor(1, 1, 1, 0.5f);
+        collisionBack.set(new Vector3(back.getVertices()[0], back.getVertices()[1], -10), new Vector3(back.getVertices()[10], back.getVertices()[11], 10));
+
+
+        titleBatch = new SpriteBatch();
+        titleBatch.getProjectionMatrix().setToOrtho2D(0, 0, 800, 480);
+        fadeBatch = new SpriteBatch();
+        fadeBatch.getProjectionMatrix().setToOrtho2D(0, 0, 2, 2);
+
+
+        font = new BitmapFont();
+        font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+    }
+
+    @Override
+    public void render(float delta) {
+        Gdx.gl.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        time += delta;
+
+        if (time < 1f)
+            return;
+
+        backgroundFX.render();
+
+        titleBatch.begin();
+
+        //titleBatch.draw(title, 200, 200);
+
+        back.draw(titleBatch);
+
+        font.draw(titleBatch, "Bubble Racer is a Survival game made by Usman and Malik.", 210, 260);
+        font.draw(titleBatch, "You choose your ship and try to last !", 200, 240);
+        font.draw(titleBatch, "Use the arrow keys to control the Ships", 200, 220);
+
+
+        font.draw(titleBatch, "This game was refactored from a one button RTS to an arcade game", 200, 150);
+        font.draw(titleBatch, "Original Game is called Pax Britannica", 200, 130);
+
+
 //  	fighter.setPosition(70, 215);
 //		fighter.draw(titleBatch);
-		
 
-		
-		titleBatch.end();
 
-		if (!finished && fade > 0) {
-			fade = Math.max(fade - Gdx.graphics.getDeltaTime() / 2.f, 0);
-			fadeBatch.begin();
-			blackFade.setColor(blackFade.getColor().r, blackFade.getColor().g, blackFade.getColor().b, fade);
-			blackFade.draw(fadeBatch);
-			fadeBatch.end();
-		}
+        titleBatch.end();
 
-		if (finished) {
-			fade = Math.min(fade + Gdx.graphics.getDeltaTime() / 2.f, 1);
-			fadeBatch.begin();
-			blackFade.setColor(blackFade.getColor().r, blackFade.getColor().g, blackFade.getColor().b, fade);
-			blackFade.draw(fadeBatch);
-			fadeBatch.end();
-			if (fade >= 1) {
-				game.setScreen(new MainMenu(game));
-			}
-		}
+        if (!finished && fade > 0) {
+            fade = Math.max(fade - Gdx.graphics.getDeltaTime() / 2.f, 0);
+            fadeBatch.begin();
+            blackFade.setColor(blackFade.getColor().r, blackFade.getColor().g, blackFade.getColor().b, fade);
+            blackFade.draw(fadeBatch);
+            fadeBatch.end();
+        }
 
-	}
-	
-	@Override
-	public void resize(int width, int height) {
-		this.width = width;
-		this.height = height;
-		if (width == 480 && height == 320) {
-			cam = new OrthographicCamera(700, 466);
-			this.width = 700;
-			this.height = 466;
-		} else if (width == 320 && height == 240) {
-			cam = new OrthographicCamera(700, 525);
-			this.width = 700;
-			this.height = 525;
-		} else if (width == 400 && height == 240) {
-			cam = new OrthographicCamera(800, 480);
-			this.width = 800;
-			this.height = 480;
-		} else if (width == 432 && height == 240) {
-			cam = new OrthographicCamera(700, 389);
-			this.width = 700;
-			this.height = 389;
-		} else if (width == 960 && height == 640) {
-			cam = new OrthographicCamera(800, 533);
-			this.width = 800;
-			this.height = 533;
-		}  else if (width == 1366 && height == 768) {
-			cam = new OrthographicCamera(1280, 720);
-			this.width = 1280;
-			this.height = 720;
-		} else if (width == 1366 && height == 720) {
-			cam = new OrthographicCamera(1280, 675);
-			this.width = 1280;
-			this.height = 675;
-		} else if (width == 1536 && height == 1152) {
-			cam = new OrthographicCamera(1366, 1024);
-			this.width = 1366;
-			this.height = 1024;
-		} else if (width == 1920 && height == 1152) {
-			cam = new OrthographicCamera(1366, 854);
-			this.width = 1366;
-			this.height = 854;
-		} else if (width == 1920 && height == 1200) {
-			cam = new OrthographicCamera(1366, 800);
-			this.width = 1280;
-			this.height = 800;
-		} else if (width > 1280) {
-			cam = new OrthographicCamera(1280, 768);
-			this.width = 1280;
-			this.height = 768;
-		} else if (width < 800) {
-			cam = new OrthographicCamera(800, 480);
-			this.width = 800;
-			this.height = 480;
-		} else {
-			cam = new OrthographicCamera(width, height);
-		}
-		cam.position.x = 400;
-		cam.position.y = 240;
-		cam.update();	
-		backgroundFX.resize(width, height);
-		titleBatch.getProjectionMatrix().set(cam.combined);
-		
-		back.setPosition(20 - ((this.width-800)/2), 10- ((this.height-480)/2));
-		collisionBack.set(new Vector3(back.getVertices()[0], back.getVertices()[1], -10),new Vector3(back.getVertices()[10], back.getVertices()[11], 10));
-	
-	}
+        if (finished) {
+            fade = Math.min(fade + Gdx.graphics.getDeltaTime() / 2.f, 1);
+            fadeBatch.begin();
+            blackFade.setColor(blackFade.getColor().r, blackFade.getColor().g, blackFade.getColor().b, fade);
+            blackFade.draw(fadeBatch);
+            fadeBatch.end();
+            if (fade >= 1) {
+                game.setScreen(new MainMenu(game));
+            }
+        }
 
-	@Override
-	public void hide() {
-	}
+    }
 
-	@Override
-	public boolean keyDown(int keycode) {
-		if(keycode == Input.Keys.BACK) {
-			finished = true;
-		}
-		
-		if(keycode == Input.Keys.ESCAPE) {
-			finished = true;
-		}
-		return false;
-	}
+    @Override
+    public void resize(int width, int height) {
+        this.width = width;
+        this.height = height;
+        if (width == 480 && height == 320) {
+            cam = new OrthographicCamera(700, 466);
+            this.width = 700;
+            this.height = 466;
+        } else if (width == 320 && height == 240) {
+            cam = new OrthographicCamera(700, 525);
+            this.width = 700;
+            this.height = 525;
+        } else if (width == 400 && height == 240) {
+            cam = new OrthographicCamera(800, 480);
+            this.width = 800;
+            this.height = 480;
+        } else if (width == 432 && height == 240) {
+            cam = new OrthographicCamera(700, 389);
+            this.width = 700;
+            this.height = 389;
+        } else if (width == 960 && height == 640) {
+            cam = new OrthographicCamera(800, 533);
+            this.width = 800;
+            this.height = 533;
+        } else if (width == 1366 && height == 768) {
+            cam = new OrthographicCamera(1280, 720);
+            this.width = 1280;
+            this.height = 720;
+        } else if (width == 1366 && height == 720) {
+            cam = new OrthographicCamera(1280, 675);
+            this.width = 1280;
+            this.height = 675;
+        } else if (width == 1536 && height == 1152) {
+            cam = new OrthographicCamera(1366, 1024);
+            this.width = 1366;
+            this.height = 1024;
+        } else if (width == 1920 && height == 1152) {
+            cam = new OrthographicCamera(1366, 854);
+            this.width = 1366;
+            this.height = 854;
+        } else if (width == 1920 && height == 1200) {
+            cam = new OrthographicCamera(1366, 800);
+            this.width = 1280;
+            this.height = 800;
+        } else if (width > 1280) {
+            cam = new OrthographicCamera(1280, 768);
+            this.width = 1280;
+            this.height = 768;
+        } else if (width < 800) {
+            cam = new OrthographicCamera(800, 480);
+            this.width = 800;
+            this.height = 480;
+        } else {
+            cam = new OrthographicCamera(width, height);
+        }
+        cam.position.x = 400;
+        cam.position.y = 240;
+        cam.update();
+        backgroundFX.resize(width, height);
+        titleBatch.getProjectionMatrix().set(cam.combined);
 
-	@Override
-	public boolean keyUp(int keycode) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+        back.setPosition(20 - ((this.width - 800) / 2), 10 - ((this.height - 480) / 2));
+        collisionBack.set(new Vector3(back.getVertices()[0], back.getVertices()[1], -10), new Vector3(back.getVertices()[10], back.getVertices()[11], 10));
 
-	@Override
-	public boolean keyTyped(char character) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    }
 
-	@Override
-	public boolean touchDown(int x, int y, int pointer, int button) {
-		collisionRay = cam.getPickRay(x, y);
-		
-		if (Intersector.intersectRayBoundsFast(collisionRay, collisionBack)) {
-			finished = true;
-		}
-		return false;
-	}
+    @Override
+    public void hide() {
+    }
 
-	@Override
-	public boolean touchUp(int x, int y, int pointer, int button) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean keyDown(int keycode) {
+        if (keycode == Input.Keys.BACK) {
+            finished = true;
+        }
 
-	@Override
-	public boolean touchDragged(int x, int y, int pointer) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+        if (keycode == Input.Keys.ESCAPE) {
+            finished = true;
+        }
+        return false;
+    }
 
-	@Override
-	public boolean scrolled(int amount) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean keyUp(int keycode) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 
-	@Override
-	public boolean mouseMoved(int screenX, int screenY) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean keyTyped(char character) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean touchDown(int x, int y, int pointer, int button) {
+        collisionRay = cam.getPickRay(x, y);
+
+        if (Intersector.intersectRayBoundsFast(collisionRay, collisionBack)) {
+            finished = true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean touchUp(int x, int y, int pointer, int button) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean touchDragged(int x, int y, int pointer) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean scrolled(int amount) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean mouseMoved(int screenX, int screenY) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 }

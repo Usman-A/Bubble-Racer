@@ -4,20 +4,20 @@ import com.badlogic.gdx.graphics.Texture;
 
 public interface Enemy {
 
-	Texture texture();
+    Texture texture();
 
-	int initialHealth();
-	
-	int health();
+    int initialHealth();
 
-	int damage();
+    int health();
 
-	float getX();
+    int damage();
 
-	float getY();
+    float getX();
 
-	void changeX(float time);
-	
-	public void changeHealth();
+    float getY();
+
+    void changeX(float time);
+
+    public void changeHealth();
 
 }

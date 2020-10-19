@@ -5,36 +5,35 @@
 package Collectables;
 
 import com.badlogic.gdx.graphics.Texture;
-
 import de.swagner.paxbritannica.Resources;
 
-public class Pearl implements Collectible{
-	float x, y;
-	public Texture texture = Resources.getInstance().pearl;
-	
-	public Pearl(float startingY, float startingX) {
-		y = startingY;
-		x = startingX;
-	}
+public class Pearl implements Collectible {
+    public Texture texture = Resources.getInstance().pearl;
+    float x, y;
 
-	public Texture texture() {
-		return texture;
-	}
+    public Pearl(float startingY, float startingX) {
+        y = startingY;
+        x = startingX;
+    }
 
-	public float getX() {
-		return x;
-	}
+    public Texture texture() {
+        return texture;
+    }
 
-	public float getY() {
-		return y;
-	}
+    public float getX() {
+        return x;
+    }
 
-	public void changeX(float time){
-		x -= 10 * Math.pow(2,time/45);
-	}
+    public float getY() {
+        return y;
+    }
 
-	public int value() {
-		return 50;
-	}
+    public void changeX(float time) {
+        x -= 10 * Math.pow(2, time / 45);
+    }
+
+    public int value() {
+        return 50;
+    }
 
 }

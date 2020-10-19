@@ -1,51 +1,50 @@
 package Monsters;
 
 import com.badlogic.gdx.graphics.Texture;
-
 import de.swagner.paxbritannica.Resources;
 
 public class JellyFish implements Enemy {
-	int health = 600;
-	int initialHealth = health;
-	float x, y;
-	public Texture texture = Resources.getInstance().jellyFish;
+    public Texture texture = Resources.getInstance().jellyFish;
+    int health = 600;
+    int initialHealth = health;
+    float x, y;
 
-	public JellyFish(float startingY) {
-		y = startingY;
-		x = 900;
-	}
+    public JellyFish(float startingY) {
+        y = startingY;
+        x = 900;
+    }
 
-	public Texture texture() {
-		return this.texture;
-	}
+    public Texture texture() {
+        return this.texture;
+    }
 
 
-	public int initialHealth() {
-		return initialHealth;
-	}
-	
-	public int health() {
-		return health;
-	}
+    public int initialHealth() {
+        return initialHealth;
+    }
 
-	public int damage() {
-		return 50;
-	}
+    public int health() {
+        return health;
+    }
 
-	public void changeX(float time){
-		x -= 3 * Math.pow(2,time/45);
-	}
+    public int damage() {
+        return 50;
+    }
 
-	public void changeHealth() {
-		health-=300;
-	}
-	
-	public float getX() {
-		return this.x;
-	}
+    public void changeX(float time) {
+        x -= 3 * Math.pow(2, time / 45);
+    }
 
-	public float getY() {
-		return this.y;
-	}
+    public void changeHealth() {
+        health -= 300;
+    }
+
+    public float getX() {
+        return this.x;
+    }
+
+    public float getY() {
+        return this.y;
+    }
 
 }
